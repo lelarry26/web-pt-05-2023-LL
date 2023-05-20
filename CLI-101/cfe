@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Create a folder with the name provided as the first param/argument
+mkdir $1
+
+cd $1
+
+# Inside project folder create index.html
+touch index.html
+
+# inside it create folder assets, css, js
+mkdir assets css js
+
+# Inside folder css create file called styles.css
+touch css/styles.css js/script.js
+
+
