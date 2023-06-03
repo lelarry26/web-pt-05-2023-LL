@@ -3,19 +3,54 @@
 
 <head>
   <title>An HTML Document</title>
+  <style>
+    body {
+      background-color: #ffe5f9;
+    }
+
+    .hello {
+      color: black;
+    }
+
+    .whatever {
+      color: orange;
+    }
+
+    .name {
+      text-align: center;
+    }
+
+    p {
+      font-family: "Times New Roman", Serif;
+      font-size: 20px;
+    }
+
+    #my_header {
+      font-size: 100px
+    }
+
+    div p {
+      background-color: grey;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Software Engineering</h1>
+  <h1 id="my_header" class="whatever name hello">Software Engineering</h1>
   <p> It is a cool career where you code and make money</p>
 
-  <h2>Carreer Paths</h2>
-  <p>
-    As a software engineer you can go into multiple career paths. such as front-end, backend, SRE, Security, and more.
-  </p>
+  <h2 class="red name">Carreer Paths</h2>
+  <div>
+    <p>
+      As a software engineer you can go into multiple career paths. such as front-end, backend, SRE, Security, and more.
+    </p>
+  </div>
 
-  <h3>Carreer Switching</h3>
+
+  <div>
+    <h3 class="whatever name">Carreer Switching</h3>
+  </div>
   <p>
     Some software engineers decide to move into management as Engineer manager.
   </p>
