@@ -34,6 +34,20 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
+    .container {
+      display: flex;
+      background-color: grey;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    .container>div {
+      border: 1px solid black;
+      padding: 20px;
+      flex-grow: 1;
+    }
   </style>
 </head>
 
@@ -56,6 +70,18 @@
     <div>8</div>
     <div>9</div>
     <div>10</div>
+  </div>
+
+
+  <div class="container">
+    <div>1</div>
+    <div style="order: 2; flex-grow:3;">2</div>
+    <div style="align-self: flex-end;">3</div>
+    <div style="width:200px; order: -1;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dicta facilis
+      architecto
+      quaerat velit
+      perspiciatis deleniti magni natus cupiditate commodi eius porro placeat, nostrum libero praesentium voluptas?
+      Libero, vel error!</div>
   </div>
 </body>
 
